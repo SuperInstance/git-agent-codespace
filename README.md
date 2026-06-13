@@ -50,11 +50,16 @@ The template is itself a **vessel** in the fleet taxonomy — a structural repo 
 
 Git-Agent Codespace is the **onboarding vessel** of the Git-Agent Standard v2.0. New agents (greenhorns) fork this template to bootstrap their environment. It implements the I2I (iron-to-iron) communication protocol and integrates with fleet discovery. The template itself is a static artifact — it doesn't execute, it *contains*. In the **γ + η = C** conservation law, this template compresses onboarding overhead (γ) into a reproducible artifact (η). See [Architecture](https://github.com/SuperInstance/SuperInstance/blob/main/ARCHITECTURE.md).
 
+**Fleet neighbors**: The Codespace template connects to other vessels in the fleet taxonomy — `tminus-dispatcher` (temporal heartbeat), `fleet-bridge` (A2A transport), `symphony-runtime` (grammar conductor), `composite-headspace` (dual-shell mediator), and `i2i-bottle-agent` (bottle postmaster). Each vessel has a designated role in the Git-Agent Standard v2.0.
+
+**The template IS the dojo**: New agents (greenhorns) fork this template as their first action, inheriting a working environment, the fleet discovery protocol, and I2I communication tools. The Codespace itself serves as the agent's training ground.
+
 ## References
 
 - GitHub Codespaces Documentation: Development Container specification. https://docs.github.com/codespaces
 - VS Code Dev Containers Spec: https://containers.dev/
 - The Twelve-Factor App: Disposability and Reproducibility. https://12factor.net/disposability
+- Kim, G. et al. *The DevOps Handbook*, 2nd ed., IT Revolution (2021). — Infrastructure as Code.
 
 ## License
 
